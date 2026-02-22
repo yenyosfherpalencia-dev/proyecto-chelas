@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Chelas Santa Lucía</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-principal">
+
+    <!-- Header -->
+    <header>
+        <h1 class="nombre-sitio">
+            Página dedicada a <span>Mostrar las chelas de Santa Lucía</span>
+        </h1>
+    </header>
+
+    <!-- Navegación -->
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-principal contenedor">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+
+            <!-- Menú -->
+            <div class="menu" id="menu">
+                <a class="enlace activo" href="principal.html">Las chelas en Santa Lucía</a>
+                <a class="enlace" href="chela2.html">Tipos <span class="color-rojo">de</span> chela</a>
+                <a class="enlace" href="chela3.html">Tipos de consumidores</a>
+                <a class="enlace" href="chela4.html">No fomentamos el consumo excesivo de chelas</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero hero-principal"></div>
+
+    <!-- Contenido principal -->
+    <section class="contenedor principal">
+        <h2 class="text-center">Las chelas en Santa Lucía Cotzumalguapa</h2>
+
+        <div class="listado-objetivos">
+
+            <!-- Objetivo 1 -->
+            <div class="objetivo">
+                <img src="../assets/portada.png" alt="Img de Portada">
+                <div class="texto-portada">
+                    <h3>Acerca de</h3>
+                    <p>Santa Lucía Cotzumalguapa, en el departamento de Escuintla, Guatemala, ofrece una escena local ideal para quienes buscan pasar un buen rato con cervezas frías, ambiente relajado y buena compañía.</p>
+                    <p>Además de bares, la ciudad cuenta con espacios populares entre locales donde puedes beber cervezas, compartir con amigos y disfrutar del ambiente de la comunidad.</p>
+                </div>
+            </div>
+
+            <!-- Objetivo 2 -->
+            <div class="objetivo">
+                <img src="../assets/portada2.PNG" alt="Img Portada 2">
+                <div class="texto-portada">
+                    <h3>Prostíbulos en Santa Lucía Cotzumalguapa</h3>
+                    <p>En Santa Lucía Cotzumalguapa, la vida nocturna incluye una variedad de espacios donde se disfruta de la cerveza y otras bebidas alcohólicas, como bares tradicionales y prostíbulos autorizados.</p>
+                    <p>Estos lugares son puntos comunes de reunión social, donde adultos buscan relajarse, convivir y pasar un buen rato.</p>
+                </div>
+            </div>
+
+            <!-- Objetivo 3-->
+            <div class="objetivo">
+                <img src="../assets/portada3.PNG" alt="Img Portada 3">
+                <div class="texto-portada">
+                    <h3>Consumo responsable</h3>
+                    <p>El consumo responsable de alcohol es fundamental para garantizar la seguridad y el bienestar de todos los asistentes. En bares y prostíbulos de la zona, se recomienda siempre respetar las normas locales y legales, así como cuidar el ambiente para mantener una experiencia positiva.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección sobre la página -->
+    <section class="sobre-la-pagina">
+        <div class="contenedor sobre-la-pagina-grid">
+            <div class="imagen">
+                <img src="../assets/portada5.PNG" alt="Sobre la Pagina">
+            </div>
+
+            <div class="texto-sobre-la-pagina">
+                <h2>Sobre la Pagina</h2>
+                <p>Está pagina no fomenta el consumo excesivo de las chelas, solamente muestra el ambiente que se sostiene en nuestra querida Santa Lucía Cotzumalguapa. Cualquier disgusto por parte del ingeniero con respecto a esta pagina, no me hago responsable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">
+            Todos los derechos reservados &copy; Las chelas en Santa Lucía Cotzumalguapa
+        </p>
+    </footer>
+
+    <!-- Script menú hamburguesa -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

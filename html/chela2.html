@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Chela</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-chela2">
+
+    <!-- Header -->
+    <header>
+        <h1 class="nombre-sitio">
+            Página dedicada a
+            <span>Mostrar las chelas de Santa Lucía</span>
+        </h1>
+    </header>
+
+    <!-- NAVEGACIÓN HAMBURGUESA -->
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-principal contenedor">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <!-- Menú -->
+            <div class="menu" id="menu">
+                <a class="enlace" href="principal.html">Las chelas en Santa Lucía</a>
+                <a class="enlace activo" href="chela2.html">Tipos de chela</a>
+                <a class="enlace" href="chela3.html">Tipos de consumidores</a>
+                <a class="enlace" href="chela4.html">No fomentamos el consumo excesivo</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero hero-chela2"></div>
+
+    <!-- Contenido principal -->
+    <main class="contenedor principal">
+        <h2 class="text-center">Tipos de Chela</h2>
+
+        <div class="listado-objetivos">
+
+            <!-- Gallo -->
+            <div class="objetivo">
+                <img src="../assets/gallo.png" alt="Cerveza Gallo">
+                <div class="texto-portada">
+                    <h3>Cerveza Gallo</h3>
+                    <p>La cerveza Gallo es una de las más reconocidas y consumidas en Guatemala.</p>
+                    <p>En Santa Lucía Cotzumalguapa es muy común verla en tiendas y celebraciones.</p>
+                    <a class="btn" href="https://www.cerveceriacentroamericana.com/cervezas/" target="_blank">
+                        Ver más sobre Gallo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ice -->
+            <div class="objetivo">
+                <img src="../assets/ice.png" alt="Cerveza Ice">
+                <div class="texto-portada">
+                    <h3>Cerveza Ice</h3>
+                    <p>La cerveza Ice se caracteriza por su sabor más suave y refrescante.</p>
+                    <p>Es popular en reuniones entre amigos.</p>
+                    <a class="btn" href="https://cervezadoradaice.com/" target="_blank">
+                        Ver más sobre Ice
+                    </a>
+                </div>
+            </div>
+
+            <!-- Corona -->
+            <div class="objetivo">
+                <img src="../assets/corona.png" alt="Cerveza Corona">
+                <div class="texto-portada">
+                    <h3>Cerveza Corona</h3>
+                    <p>Corona es una cerveza mexicana conocida a nivel internacional.</p>
+                    <p>En Santa Lucía se encuentra en supermercados y restaurantes.</p>
+                    <a class="btn" href="https://www.coronaguate.com/" target="_blank">
+                        Ver más sobre Corona
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">
+            Todos los derechos reservados &copy; 2026
+        </p>
+    </footer>
+
+    <!-- Script menú hamburguesa -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

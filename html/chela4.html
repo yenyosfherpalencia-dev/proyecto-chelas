@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No fomentamos el consumo excesivo</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-chela4">
+
+    <!-- Header -->
+    <header>
+        <h1 class="nombre-sitio">
+            Página dedicada a <span>Mostrar las chelas de Santa Lucía</span>
+        </h1>
+    </header>
+
+    <!-- NAVEGACIÓN HAMBURGUESA -->
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-principal contenedor">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <!-- Menú -->
+            <div class="menu" id="menu">
+                <a class="enlace" href="principal.html">Las chelas en Santa Lucía</a>
+                <a class="enlace" href="chela2.html">Tipos de chela</a>
+                <a class="enlace" href="chela3.html">Tipos de consumidores</a>
+                <a class="enlace activo" href="chela4.html">No fomentamos el consumo excesivo</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero hero-chela4"></div>
+
+    <!-- Contenido principal -->
+    <main class="contenedor principal">
+        <h2 class="text-center">No fomentamos el consumo excesivo</h2>
+
+        <section class="sobre-la-pagina">
+            <div class="sobre-la-pagina-grid">
+
+                <img src="../assets/conciencia.png" alt="Conciencia sobre el consumo de alcohol">
+
+                <div class="texto-sobre-la-pagina">
+                    <h2>Mensaje Importante</h2>
+
+                    <p>
+                        Esta página fue creada únicamente como un proyecto académico para el curso 
+                        <strong>Programación Web 1</strong> de la universidad.
+                    </p>
+
+                    <p>
+                        El objetivo principal es demostrar el uso de HTML y CSS para la creación de un sitio web informativo.
+                        <strong>No buscamos fomentar el consumo de alcohol</strong> ni promover hábitos dañinos.
+                    </p>
+
+                    <p>
+                        El consumo excesivo de bebidas alcohólicas puede provocar problemas de salud, accidentes,
+                        conflictos familiares y consecuencias graves en la vida personal y social.
+                    </p>
+
+                    <p>
+                        Si decides consumir, hazlo con responsabilidad, con moderación y siempre priorizando tu bienestar.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sobre-la-pagina">
+            <div class="sobre-la-pagina-grid">
+
+                <div class="texto-sobre-la-pagina">
+                    <h2>Recomendaciones</h2>
+
+                    <p>✔ No manejes si has consumido alcohol.</p>
+                    <p>✔ Evita tomar en exceso o por presión social.</p>
+                    <p>✔ Mantente hidratado y aliméntate bien.</p>
+                    <p>✔ Si tienes problemas con el alcohol, busca ayuda profesional o apoyo familiar.</p>
+
+                    <p>
+                        Recordemos que la diversión no depende del exceso, sino de las buenas decisiones.
+                    </p>
+                </div>
+
+                <img src="../assets/exceso.png" alt="No al consumo excesivo de alcohol">
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">
+            Todos los derechos reservados &copy; 2026
+        </p>
+    </footer>
+
+    <!-- Script menú hamburguesa -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>

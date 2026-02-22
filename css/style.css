@@ -1,0 +1,307 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-titulos: 'Playfair Display', serif;
+    --color-primario: #181816;
+    --color-secundario: #555;
+    --color-fondo: #f5f5f5;
+}
+
+/* ============================= */
+/* ESTILOS GENERALES */
+/* ============================= */
+
+body {
+    font-family: var(--fuente-principal);
+    background: #6b4a3a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.nombre-sitio {
+    color: #070706;
+    font-family: var(--fuente-titulos);
+    font-size: 2.5rem;
+}
+
+.nombre-sitio span {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* ============================= */
+/* NAVEGACIÓN */
+/* ============================= */
+
+.contenedor-navegacion {
+    background-color: #000;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* MENÚ DESKTOP */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.enlace {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 5px 10px;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
+
+.enlace.activo {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffd18a;
+}
+
+.color-rojo {
+    color: red;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: heroEntrada 1.2s ease;
+}
+
+@keyframes heroEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(1.05);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.hero-principal {
+    background-image: url("../assets/portada.png");
+}
+
+.hero-chela2 {
+    background-image: url("../assets/hero2.png");
+}
+
+.hero-chela3 {
+    background-image: url("../assets/hero3.PNG");
+}
+
+.hero-chela4 {
+    background-image: url("../assets/hero4.PNG");
+}
+
+/* ============================= */
+/* SECCIÓN PRINCIPAL */
+/* ============================= */
+
+.principal {
+    padding: 60px 0;
+}
+
+.principal h2 {
+    margin-bottom: 50px;
+    font-family: var(--fuente-titulos);
+    font-size: 2.2rem;
+}
+
+.listado-objetivos {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.objetivo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #e7c48a;
+    color: #2a1a14;
+    border: 2px solid #b57b2e;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.objetivo:hover {
+    transform: scale(1.02);
+}
+
+.objetivo:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.objetivo img {
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #b57b2e;
+}
+
+.texto-portada {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.texto-portada h3 {
+    font-family: var(--fuente-titulos);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.texto-portada p {
+    margin-bottom: 10px;
+    color: #3d2b20;
+}
+
+/* ============================= */
+/* SOBRE LA PÁGINA */
+/* ============================= */
+
+.sobre-la-pagina {
+    background-color: #F5F5DC;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 60px;
+    color: #2a1a14;
+}
+
+.sobre-la-pagina-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+    .objetivo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .objetivo:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .sobre-la-pagina-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Mostrar botón hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Ocultar menú */
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        margin-top: 10px;
+    }
+
+    /* Mostrar cuando esté activo */
+    .menu.active {
+        display: flex;
+    }
+
+    .menu .enlace {
+        padding: 15px;
+        border-top: 1px solid #333;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    footer {
+        position: relative;
+    }
+}
