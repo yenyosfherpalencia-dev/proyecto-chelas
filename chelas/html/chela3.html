@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Consumidores</title>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-chela3">
+
+    <!-- Header -->
+    <header>
+        <h1 class="nombre-sitio">
+            Página dedicada a <span>Mostrar las chelas de Santa Lucía</span>
+        </h1>
+    </header>
+
+    <!-- Navegación Hamburguesa -->
+    <div class="contenedor-navegacion">
+        <nav class="navegacion-principal contenedor">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <!-- Menú -->
+            <div class="menu" id="menu">
+                <a class="enlace" href="principal.html">Las chelas en Santa Lucía</a>
+                <a class="enlace" href="chela2.html">Tipos de chela</a>
+                <a class="enlace activo" href="chela3.html">Tipos de consumidores</a>
+                <a class="enlace" href="chela4.html">No fomentamos el consumo excesivo</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero hero-chela3"></div>
+
+    <!-- Contenido principal -->
+    <main class="contenedor principal">
+        <h2 class="text-center">Tipos de Consumidores</h2>
+
+        <div class="listado-objetivos">
+
+            <div class="objetivo">
+                <img src="../assets/social.png" alt="Consumidor Social">
+                <div class="texto-portada">
+                    <h3>El Consumidor Social</h3>
+                    <p>Este tipo de persona toma cerveza principalmente para compartir con amigos y disfrutar un buen ambiente.</p>
+                    <p>En Santa Lucía Cotzumalguapa es común verlo en bares, convivios o reuniones familiares donde la cerveza es parte del momento.</p>
+                </div>
+            </div>
+
+            <div class="objetivo">
+                <img src="../assets/fino.png" alt="Consumidor Fino">
+                <div class="texto-portada">
+                    <h3>El Consumidor Fino</h3>
+                    <p>El consumidor fino busca marcas caras y reconocidas, priorizando imagen y estatus.</p>
+                    <p>Suele elegir bebidas premium porque para él importa tanto el sabor como lo que representa.</p>
+                </div>
+            </div>
+
+            <div class="objetivo">
+                <img src="../assets/alcoholico.PNG" alt="Consumidor Chara">
+                <div class="texto-portada">
+                    <h3>El Consumidor Chara</h3>
+                    <p>Este tipo de consumidor tiene una relación problemática con el alcohol y suele beber en exceso.</p>
+                    <p>En muchas comunidades se pueden observar situaciones donde el consumo afecta la vida personal.</p>
+                </div>
+            </div>
+
+            <div class="objetivo">
+                <img src="../assets/inexperto.PNG" alt="Consumidor Inexperto">
+                <div class="texto-portada">
+                    <h3>El Consumidor Inexperto</h3>
+                    <p>No tiene mucha experiencia y suele probar bebidas nuevas o menos conocidas.</p>
+                    <p>Disfruta el ambiente social sin necesariamente buscar el exceso.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">
+            Todos los derechos reservados &copy; 2026
+        </p>
+    </footer>
+
+    <!-- Script menú hamburguesa -->
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
